@@ -113,7 +113,8 @@ const getDependecyDescriptions = (data) => {
         dependency.projectDescription = data.description;
 
         return dependency;
-      });
+      })
+      .catch(console.error);
   });
 };
 
