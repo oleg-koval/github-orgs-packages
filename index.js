@@ -35,7 +35,7 @@ const getReposList = Promise.method(() => {
   return getRepos
     .then((repos) => {
       const { data: reposList } = repos;
-      return reposList.slice(1, 4);
+      return reposList;
     })
     .catch((err) => {
       console.log({ err }, 'getReposList: Error during getting repos list');
