@@ -1,4 +1,4 @@
-## 2.0.0 (2018-03-13)
+## 1.0.0 (2018-03-13)
 
 ##### Bug Fixes
 
@@ -10,4 +10,3 @@
 
 *  add readme ([1ef1c21e](https://github.com/oleg-koval/github-orgs-packages/commit/1ef1c21e94b658dbc7c29326d725b819751f3a6f))
 *  Init commit ([ae964dcf](https://github.com/oleg-koval/github-orgs-packages/commit/ae964dcffb79742dba375ba073935e708127289d))
-
