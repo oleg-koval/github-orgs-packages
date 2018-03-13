@@ -1,6 +1,6 @@
 {
   "name": "github-orgs-packages",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get information for all packages inside of your github organisation",
   "main": "index.js",
   "repository": {
