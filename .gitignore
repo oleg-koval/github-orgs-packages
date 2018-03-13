@@ -1,0 +1,6 @@
+/node_modules/
+/.envrc
+.DS_Store
+.npmrc
+.log
+.git

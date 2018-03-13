@@ -1,0 +1,36 @@
+{
+  "name": "github-orgs-packages",
+  "version": "1.0.0",
+  "description": "Get information for all packages inside of your github organisation",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleg-koval/ya-skeleton"
+  },
+  "keywords": [
+    "github",
+    "repositories",
+    "dependencies",
+    "nodejs",
+    "javascript",
+    "npm",
+    "github api",
+    "devDependencies"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint ."
+  },
+  "author": "Oleg Koval",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "github-api": "^3.0.0",
+    "package-info": "^3.0.1",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-sexy": "^3.2.1"
+  }
+}
