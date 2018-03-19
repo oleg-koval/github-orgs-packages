@@ -1,3 +1,9 @@
+#### 1.1.5 (2018-03-19)
+
+##### Bug Fixes
+
+*  Return promise ([572aad29](https://github.com/oleg-koval/github-orgs-packages/commit/572aad295b72331dbbd36249a5d23642d28c1a64))
+
 #### 1.1.4 (2018-03-19)
 
 ##### Code Style Changes
