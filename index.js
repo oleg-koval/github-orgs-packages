@@ -142,6 +142,10 @@ const remapGroupedDeps = deps => Object.keys(deps).map((key) => {
   };
 });
 
+const resolve = (deps) => Promise.method((resolve) => {
+  return resolve(deps)
+})
+
 return getReposList()
   .map(flattenObj)
   .map(getRepoProps)
@@ -152,7 +156,5 @@ return getReposList()
   .then(flatten)
   .then(groupByProjectName)
   .then(remapGroupedDeps)
-  .then((deps) => Promise.method(resolve) => {
-    return resolve(deps)
-  })
+  .then(resolve)
   .catch(Promise.reject);
