@@ -1,3 +1,9 @@
+#### 1.1.6 (2018-03-19)
+
+##### Bug Fixes
+
+*  return promise method ([651763bd](https://github.com/oleg-koval/github-orgs-packages/commit/651763bde24dc7013eca60cfe2ddecc4ef9a04d4))
+
 #### 1.1.5 (2018-03-19)
 
 ##### Bug Fixes
