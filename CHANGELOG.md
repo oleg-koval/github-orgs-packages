@@ -1,3 +1,9 @@
+#### 1.1.3 (2018-03-19)
+
+##### Refactors
+
+*  rename functions, replace console.log with error ([65ce5537](https://github.com/oleg-koval/github-orgs-packages/commit/65ce5537c8577a228627ef8f122f8314b34e6c99))
+
 #### 1.1.2 (2018-03-19)
 
 ##### Bug Fixes
