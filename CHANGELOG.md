@@ -1,3 +1,9 @@
+#### 1.1.4 (2018-03-19)
+
+##### Code Style Changes
+
+*  fix linting ([ddb61c4b](https://github.com/oleg-koval/github-orgs-packages/commit/ddb61c4b223a54879babcada8bc5a67363aa39d2))
+
 #### 1.1.3 (2018-03-19)
 
 ##### Refactors
