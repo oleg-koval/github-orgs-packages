@@ -1,3 +1,9 @@
+#### 1.1.2 (2018-03-19)
+
+##### Bug Fixes
+
+*  get all orgs repos instead of few ([1a662b48](https://github.com/oleg-koval/github-orgs-packages/commit/1a662b4837d7fce184f296737457dba4c56928b2))
+
 #### 1.1.1 (2018-03-19)
 
 ##### Other Changes
