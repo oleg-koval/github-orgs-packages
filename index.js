@@ -129,5 +129,4 @@ return getReposList()
   .map(getDependecyDescriptions)
   .then(flatten)
   .then(groupByProjectName)
-  .tap(console.log)
   .catch(console.error);
