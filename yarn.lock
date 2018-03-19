@@ -1276,6 +1276,10 @@ safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
+semver@5.3.x:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
+
 setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
@@ -1477,9 +1481,11 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
-xyz@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/xyz/-/xyz-3.0.0.tgz#50ac8f2b6c50f661062373cef8ab6b5c8c52a1fe"
+xyz@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/xyz/-/xyz-2.1.0.tgz#c3ca897f156d2178bd818cd503f94b0a3b52fa6c"
+  dependencies:
+    semver "5.3.x"
 
 yallist@^2.1.2:
   version "2.1.2"
