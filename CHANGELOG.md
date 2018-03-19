@@ -1,3 +1,9 @@
+#### 1.1.7 (2018-03-19)
+
+##### Bug Fixes
+
+*  typo in Promise method ([7e4520d7](https://github.com/oleg-koval/github-orgs-packages/commit/7e4520d7da0cbf9f2190928c8415d959916cd5e9))
+
 #### 1.1.6 (2018-03-19)
 
 ##### Bug Fixes
