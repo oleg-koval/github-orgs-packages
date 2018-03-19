@@ -1,3 +1,9 @@
+#### 1.1.1 (2018-03-19)
+
+##### Other Changes
+
+*  change release script ([51a71085](https://github.com/oleg-koval/github-orgs-packages/commit/51a71085662ecebb859b43c310f13690ce00df77))
+
 ## 1.0.0 (2018-03-13)
 
 ##### Bug Fixes
