@@ -152,4 +152,5 @@ return getReposList()
   .then(flatten)
   .then(groupByProjectName)
   .then(remapGroupedDeps)
-  .catch(console.error);
+  .then(Promise.resolve)
+  .catch(Promise.reject);
