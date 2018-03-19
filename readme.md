@@ -8,27 +8,37 @@ GH_AUTH_TOKEN=*** GH_ORG_NAME=*** npm start
 
 Will produce similar output to:
 
-```js
-{ xyz:
-   [ { usedVersion: '^2.1.0',
-       depName: 'xyz',
-       depCurrentVersion: '3.0.0',
-       depDescription: 'Publish npm packages with fewer screw-ups',
-       depHomepage: 'https://github.com/davidchambers/xyz',
-       depLicense: 'WTFPL',
-       projectName: 'cool project #1',
-       projectVersion: '1.1.0',
-       projectDescription: 'cool project description' } ],
-  eslint:
-   [ { usedVersion: '4.1.1',
-       depName: 'eslint',
-       depCurrentVersion: '4.18.2',
-       depDescription: 'An AST-based pattern checker for JavaScript.',
-       depHomepage: 'https://eslint.org',
-       depLicense: 'MIT',
-       projectName: 'cool project #2',
-       projectVersion: '1.2.0',
-       projectDescription: 'cool project description' } ] }
+```json
+[
+  {
+    "name": "xyz",
+    "description": "Publish npm packages with fewer screw-ups",
+    "currentVersion": "3.0.0",
+    "homepage": "https://github.com/davidchambers/xyz",
+    "license": "WTFPL",
+    "projects": [
+      {
+        "name": "cool-project",
+        "version": "2.1.0",
+        "description": "Description"
+      }
+    ]
+  },
+  {
+    "name": "eslint",
+    "description": "An AST-based pattern checker for JavaScript.",
+    "currentVersion": "4.19.0",
+    "homepage": "https://eslint.org",
+    "license": "MIT",
+    "projects": [
+      {
+        "name": "another-cool-project",
+        "version": "2.1.0",
+        "description": "Description"
+      }
+    ]
+  }
+]
 ```
 
 ## Dependencies
