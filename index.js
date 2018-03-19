@@ -38,7 +38,7 @@ const getReposList = Promise.method(() => {
       return reposList;
     })
     .catch((err) => {
-      console.log({ err }, 'getReposList: Error during getting repos list');
+      console.error({ err }, 'getReposList: Error during getting repos list');
     });
 });
 
@@ -120,27 +120,25 @@ const getDependecyDescriptions = (data) => {
 
 const groupByProjectName = projects => groupBy(project => project.depName)(projects);
 
-const alterDeps = deps => Object.keys(deps).map((key) => {
-  // console.log('DEPS[KEY]', JSON.stringify(deps[key], null, 2))
-  const t = deps[key].map(p => {
-    const {
-      projectName: name,
-      projectVersion: version,
-      projectDescription: description,
-    } = p;
-    return {
-      name,
-      version,
-      description
-    };
-  });
+const remapGroupedDeps = deps => Object.keys(deps).map((key) => {
   return {
     name: key,
     description: deps[key][0].depDescription,
     currentVersion: deps[key][0].depCurrentVersion,
     homepage: deps[key][0].depHomepage,
     license: deps[key][0].depLicense,
-    projects: t
+    projects: deps[key].map(p => {
+      const {
+        projectName: name,
+        projectVersion: version,
+        projectDescription: description,
+      } = p;
+      return {
+        name,
+        version,
+        description
+      };
+    });
   };
 });
 
@@ -153,5 +151,5 @@ return getReposList()
   .map(getDependecyDescriptions)
   .then(flatten)
   .then(groupByProjectName)
-  .then(alterDeps)
+  .then(remapGroupedDeps)
   .catch(console.error);
