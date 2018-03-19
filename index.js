@@ -64,7 +64,7 @@ const getPackageJson = (repo) => {
     .then(({ data }) => data)
     .catch((err) => {
       if (err.response.status === 404) {
-        console.error(`getPackageJson: package.json not found for ${repo.name}`);
+        console.warn(`warn: package.json not found for ${repo.name}`);
         return;
       }
       throw err;
@@ -114,7 +114,10 @@ const getDependecyDescriptions = (data) => {
 
         return dependency;
       })
-      .catch(console.error);
+      .catch((err) => {
+        const { path, message, host } = err;
+        console.warn(`warn: ${message}: ${path} @ ${host}`);
+      });
   });
 };
 
@@ -142,11 +145,7 @@ const remapGroupedDeps = deps => Object.keys(deps).map((key) => {
   };
 });
 
-const resolve = (deps) => Promise.method((resolve) => {
-  return resolve(deps)
-})
-
-return getReposList()
+module.exports = getReposList()
   .map(flattenObj)
   .map(getRepoProps)
   .map(getPackageJson)
@@ -156,5 +155,5 @@ return getReposList()
   .then(flatten)
   .then(groupByProjectName)
   .then(remapGroupedDeps)
-  .then(resolve)
+  .then(Promise.resolve)
   .catch(Promise.reject);

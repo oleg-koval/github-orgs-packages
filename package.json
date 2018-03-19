@@ -31,7 +31,6 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "github-api": "^3.0.0",
-    "github-orgs-packages": "^1.1.6",
     "package-info": "^3.0.1",
     "ramda": "^0.25.0"
   },

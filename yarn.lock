@@ -700,6 +700,16 @@ github-orgs-packages@^1.1.6:
     package-info "^3.0.1"
     ramda "^0.25.0"
 
+github-orgs-packages@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/github-orgs-packages/-/github-orgs-packages-1.1.7.tgz#18f58f756e6c9e26b58c169645a400d5028663a8"
+  dependencies:
+    bluebird "^3.5.1"
+    github-api "^3.0.0"
+    github-orgs-packages "^1.1.6"
+    package-info "^3.0.1"
+    ramda "^0.25.0"
+
 github-url-from-git@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/github-url-from-git/-/github-url-from-git-1.5.0.tgz#f985fedcc0a9aa579dc88d7aff068d55cc6251a0"
