@@ -1,3 +1,9 @@
+### 1.2.0 (2018-03-19)
+
+##### Bug Fixes
+
+*  export module, error handling ([ab985487](https://github.com/oleg-koval/github-orgs-packages/commit/ab98548764285079c93ee688d86c070268eec9f2))
+
 #### 1.1.7 (2018-03-19)
 
 ##### Bug Fixes
