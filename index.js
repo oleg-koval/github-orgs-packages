@@ -127,7 +127,7 @@ const remapGroupedDeps = deps => Object.keys(deps).map((key) => {
     currentVersion: deps[key][0].depCurrentVersion,
     homepage: deps[key][0].depHomepage,
     license: deps[key][0].depLicense,
-    projects: deps[key].map(p => {
+    projects: deps[key].map((p) => {
       const {
         projectName: name,
         projectVersion: version,
@@ -138,7 +138,7 @@ const remapGroupedDeps = deps => Object.keys(deps).map((key) => {
         version,
         description
       };
-    });
+    })
   };
 });
 
