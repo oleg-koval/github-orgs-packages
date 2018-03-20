@@ -1,3 +1,9 @@
+#### 1.2.1 (2018-03-20)
+
+##### Documentation Changes
+
+*  add install & usage sections to readme ([a14bb6d6](https://github.com/oleg-koval/github-orgs-packages/commit/a14bb6d61f165726e36ceeab7658dacb89913236))
+
 ### 1.2.0 (2018-03-19)
 
 ##### Bug Fixes
