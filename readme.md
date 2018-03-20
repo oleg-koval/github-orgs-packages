@@ -4,11 +4,42 @@
 
 Get information for all packages inside of your github organisation
 
+# Installation
+
+npm:
 ```sh
-GH_AUTH_TOKEN=*** GH_ORG_NAME=*** npm start
+$ npm install -S github-orgs-packages
 ```
 
-Will produce similar output to:
+yarn:
+```sh
+$ yarn add github-orgs-packages
+```
+
+# Usage
+You need to provide following env variables:
+
+```
+GH_AUTH_TOKEN=***
+GH_ORG_NAME=***
+```
+
+Code:
+
+```js
+const githubOrgsPackages = require('github-orgs-packages');
+
+const myOrgPackages = githubOrgsPackages()
+myOrgPackages
+.then((packages) => {
+  // do smth with packages
+})
+.catch((error) => {
+  // do smth with error
+})
+```
+
+It will return similar output format to:
 
 ```json
 [
