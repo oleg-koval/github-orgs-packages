@@ -29,8 +29,7 @@ Code:
 ```js
 const githubOrgsPackages = require('github-orgs-packages');
 
-const myOrgPackages = githubOrgsPackages()
-myOrgPackages
+githubOrgsPackages
 .then((packages) => {
   // do smth with packages
 })
