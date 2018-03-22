@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "start": "node index.js",
-    "generage:markdown": "node ./scripts/markdown.js",
+    "generate:markdown": "node ./scripts/markdown.js",
     "lint": "eslint .",
     "xyz:increment": "xyz --increment",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm run xyz:increment major",
