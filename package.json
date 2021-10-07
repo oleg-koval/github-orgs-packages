@@ -4,10 +4,7 @@
   "description": "Get information for all packages inside of your github organisation",
   "main": "index.js",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oleg-koval/github-orgs-packages"
-  },
+  "repository": "oleg-koval/github-orgs-packages",
   "keywords": [
     "github",
     "repositories",
@@ -20,6 +17,7 @@
   ],
   "scripts": {
     "start": "node index.js",
+    "generate:markdown": "node ./scripts/markdown.js",
     "lint": "eslint .",
     "xyz:increment": "xyz --increment",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm run xyz:increment major",
