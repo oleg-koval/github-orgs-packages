@@ -30,8 +30,8 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "github-api": "^3.0.0",
-    "package-info": "^3.0.1",
+    "github-api": "^3.4.0",
+    "package-info": "^5.0.0",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
